@@ -1,0 +1,45 @@
+main .disciplinas {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+main .disciplinas > .disciplina {
+  display: flex;
+  background-color: var(--branco);
+  padding: 5px;
+  width: 100%;
+  margin: 5px 0px;
+  flex-direction: column;
+}
+
+main .disciplina > a {
+  color: var(--branco);
+  background-color: var(--verde);
+  padding: 10px ;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+main .disciplina > a:hover {
+  background-color: var(--verde-hover);
+}
+
+main .disciplina > .conteudo {
+  display: flex;
+  height: 0px;
+  overflow: hidden;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+main .ativado {
+  height: 100% !important;
+  margin-bottom: 5px;
+}
+
+main .disciplina > .conteudo img {
+  width: 600px;
+  height: 300px;
+  background-color: var(--cinza);
+}
