@@ -1,0 +1,46 @@
+main .form-control {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 10px 0px;
+}
+
+main .conteudo {
+  display: flex;
+  gap: 10px;
+}
+
+main .conteudo h1 {
+  font-size: 2em;
+}
+
+main .conteudo > * {
+  margin: 25px 0;
+}
+
+main .conteudo .endereco {
+  margin: 15px 0;
+}
+
+.form-control textarea, input {
+  padding: 7px;
+  border: 1px solid var(--cinza-escuro);
+  border-radius: 5px;
+}
+
+.form-control textarea {
+  height: 150px;
+}
+
+.form-control button {
+  padding: 10px 0px;
+  background-color: var(--verde);
+  border: 1px solid var(--verde-hover);
+  border-radius: 5px;
+  color: var(--white);
+}
+
+.form-control button:hover {
+  background-color: var(--verde-hover);
+  cursor: pointer;
+}
