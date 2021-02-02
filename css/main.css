@@ -20,14 +20,12 @@ b {
 }
 
 .container {
-  width: 80vw;
   height: 100vh;
   display: grid;
   margin: 0px auto;
   grid-template-columns: 1fr;
   grid-template-rows: 200px auto 200px;
 }
-
 
 header {
   height: 200px;
@@ -70,12 +68,12 @@ header nav a {
 
 main {
   background-color: var(--cinza);
-  padding: 20px;
+  padding: 20px 200px;
 }
 
 footer {
   background-color: var(--cinza-escuro);
-  padding: 40px 100px;
+  padding: 40px 200px;
   display: flex;
 }
 

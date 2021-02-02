@@ -1,3 +1,36 @@
+main .semestres {
+  display: grid;
+  width: 90%;
+  margin: 50px auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 400px);
+  gap: 20px;
+}
+
+main .semestres > article { 
+  background-color: var(--branco);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main .semestres > article a { 
+  background-color: var(--verde);
+  border: 1px solid var(--verde);
+  padding: 20px;
+  margin: 10px;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--preto);
+}
+
+main .semestres > article a:hover { 
+  cursor: pointer;
+  background-color: var(--verde-hover);
+}
+
 main .disciplinas {
   margin-top: 20px;
   display: flex;
@@ -30,12 +63,12 @@ main .disciplina > .conteudo {
   height: 0px;
   overflow: hidden;
   gap: 10px;
-  overflow-y: auto;
+  transition: height .4s ;
 }
 
 main .ativado {
-  height: 100% !important;
   margin-bottom: 5px;
+  height: 300px !important;
 }
 
 main .disciplina > .conteudo img {
