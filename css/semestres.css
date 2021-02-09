@@ -7,6 +7,14 @@ main .semestres {
   gap: 20px;
 }
 
+main .semestres > article .content { 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 main .semestres > article { 
   background-color: var(--branco);
   display: flex;
@@ -72,7 +80,6 @@ main .ativado {
 }
 
 main .disciplina > .conteudo img {
-  width: 600px;
   height: 300px;
   background-color: var(--cinza);
 }

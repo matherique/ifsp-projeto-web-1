@@ -93,10 +93,8 @@ footer .integrantes {
 }
 
 footer #voltar-inicio {
-  width: 50px;
-  height: 50px;
-  background-color: var(--verde);
   border-radius: 50%;
+  font-size: 30px;
   position: fixed;
   bottom: 30px;
   right: 30px;
