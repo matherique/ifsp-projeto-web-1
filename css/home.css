@@ -1,18 +1,12 @@
-main .sobre {
+main .sobre, main .profissional {
   display: flex;
   margin: 40px 0;
   gap: 20px;
+  text-align: justify;
 }
 
 main .sobre > img, main .profissional > img{
   width: 600px;
   background-color: var(--branc);
 }
-
-main .profissional {
-  display: flex;
-  margin: 40px 0;
-  gap: 20px;
-}
-
 
