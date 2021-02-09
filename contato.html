@@ -41,25 +41,25 @@
         </section>
         <section class="form-conteto">
           <h1>Envie uma mensagem</h1>
-          <form>
+          <form id="form-contato">
             <div class="form-control">
               <label for="nome">Nome:</label>
-              <input type="text" name="nome" id="nome" />
+              <input type="text" name="nome" required id="nome" />
             </div>
             <div class="form-control">
               <label for="email">E-mail:</label>
-              <input type="text" name="email" id="email" />
+              <input type="text" name="email" required id="email" />
             </div>
             <div class="form-control">
               <label for="assunto">Assunto:</label>
-              <input type="text" name="assunto" id="assunto" />
+              <input type="text" name="assunto" required id="assunto" />
             </div>
             <div class="form-control">
               <label for="mensagem">Mensagem:</label>
-              <textarea name="assunto" id="assunto" ></textarea>
+              <textarea name="assunto" id="assunto" required ></textarea>
             </div>
             <div class="form-control">
-              <button>Enviar</button>
+              <button type="submit" >Enviar</button>
             </div>
           </form>
         </section>
@@ -87,6 +87,14 @@
     </footer>
   </div>
   <script src="js/back-top.js"></script>
+  <script>
+    const formContato = document.querySelector("#form-contato");
+    formContato.addEventListener("submit", function(event) {
+      event.preventDefault();
+      alert("E-mail enviado com sucesso");
+    });
+
+  </script>
 </body>
 
 </html>
