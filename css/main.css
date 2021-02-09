@@ -77,6 +77,10 @@ footer {
   display: flex;
 }
 
+footer .tecnologias img {
+  width: 50px;
+}
+
 footer h4 { 
   color: var(--verde);
 }
