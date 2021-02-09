@@ -5,8 +5,7 @@ main .sobre {
 }
 
 main .sobre > img, main .profissional > img{
-  width: 500px;
-  height: 250px;
+  width: 600px;
   background-color: var(--branc);
 }
 
